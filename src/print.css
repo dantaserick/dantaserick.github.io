@@ -1,0 +1,57 @@
+@media print {
+  @page { margin: 14mm; }
+
+  html, body {
+    background: #fff !important;
+    background-image: none !important;
+    font-size: 10.5pt;
+  }
+  body::before { display: none !important; }
+
+  /* flatten the dark theme: ink on paper, no surfaces, no glow */
+  * {
+    color: #111 !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    opacity: 1 !important;
+    animation: none !important;
+    transition: none !important;
+  }
+
+  .print\:hidden { display: none !important; }
+
+  [class*="text-accent"] { color: #1d4ed8 !important; }
+  [class*="text-muted"] { color: #555 !important; }
+  [class*="border-line"], [class*="divide-line"] > * { border-color: #bbb !important; }
+  [class*="bg-accent"] { background-color: #1d4ed8 !important; }
+  .rounded-xl { border-radius: 4pt; }
+
+  section { padding: 0 0 12pt 0 !important; }
+  h1 { font-size: 22pt; }
+  h1 span { color: #555 !important; }
+  h2 { font-size: 12pt; }
+  h2, h3, h4 { break-after: avoid; }
+  li { break-inside: avoid; }
+
+  #top { display: block !important; }
+  #hero-grid {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: flex-start !important;
+    gap: 8mm !important;
+    padding-top: 0 !important;
+  }
+  #hero-grid > div:first-child { flex: 1 1 auto !important; order: 1; }
+  figure { flex: 0 0 32mm !important; order: 2; width: 32mm !important; max-width: 32mm !important; margin: 0 !important; }
+  figure img { width: 32mm !important; height: auto !important; }
+  figure > div:first-child { display: none !important; }
+  figcaption { display: none !important; }
+  a { text-decoration: none; }
+  #contact a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-size: 8pt;
+    color: #555 !important;
+  }
+}
