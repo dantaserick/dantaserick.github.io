@@ -32,7 +32,7 @@ export const person = {
   email: 'dantaserick@hotmail.com',
   siteUrl: 'https://dantaserick.github.io/',
   links: [
-    { label: 'LinkedIn', href: 'https://www.linkedin.com/in/erick-dantas-29594362/' },
+    { label: 'LinkedIn', href: 'https://www.linkedin.com/in/dantaserick/' },
     { label: 'GitHub', href: 'https://github.com/dantaserick' },
   ] as Link[],
 }
