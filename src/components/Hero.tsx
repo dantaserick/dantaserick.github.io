@@ -1,5 +1,7 @@
+import { lazy, Suspense } from 'react'
 import { credentials, heroAlerts, heroIntro, person, portrait } from '../content'
-import AuditConsole from './AuditConsole'
+
+const AuditConsole = lazy(() => import('./AuditConsole'))
 
 export default function Hero() {
   const [first, ...rest] = person.name.split(' ')
@@ -86,8 +88,10 @@ export default function Hero() {
           </div>
         </figure>
 
-        <div className="print:hidden animate-fade-up lg:col-span-2 [animation-delay:520ms]">
-          <AuditConsole alerts={heroAlerts} />
+        <div className="print:hidden animate-fade-up min-h-[10.25rem] lg:col-span-2 lg:min-h-[9.5rem] [animation-delay:520ms]">
+          <Suspense fallback={<div aria-hidden className="h-full min-h-[inherit] rounded-xl border border-line bg-surface/60" />}>
+            <AuditConsole alerts={heroAlerts} />
+          </Suspense>
         </div>
       </div>
 
