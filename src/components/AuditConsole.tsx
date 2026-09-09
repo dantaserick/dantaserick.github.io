@@ -38,7 +38,7 @@ export default function AuditConsole({ alerts }: { alerts: Alert[] }) {
         <span className="h-2.5 w-2.5 rounded-full bg-line" />
         <span className="h-2.5 w-2.5 rounded-full bg-line" />
         <span className="h-2.5 w-2.5 rounded-full bg-line" />
-        <span className="ml-2 truncate">continuous-audit — live</span>
+        <span className="ml-2 truncate">agent-runtime — live</span>
         <span className="ml-auto hidden items-center gap-1.5 text-[10px] sm:flex">
           <span className="h-1.5 w-1.5 rounded-full bg-accent animate-pulse-dot" />
           uptime {hh}:{mm}:{ss}
@@ -69,8 +69,8 @@ export default function AuditConsole({ alerts }: { alerts: Alert[] }) {
       </ul>
 
       <div className="flex items-center justify-between border-t border-line px-4 py-1.5 text-[10px] text-muted">
-        <span>rules: active</span>
-        <span>universe: scored</span>
+        <span>pipelines: green</span>
+        <span>agents: governed</span>
         <span>human-in-the-loop: on</span>
       </div>
 

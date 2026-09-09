@@ -10,7 +10,7 @@ export default function Hero() {
       <div id="hero-grid" className="mx-auto grid max-w-6xl gap-10 px-5 pt-24 lg:grid-cols-[minmax(0,1fr)_17rem] lg:items-start lg:gap-x-14 lg:gap-y-5 lg:pt-16">
         {/* text column */}
         <div className="lg:pt-1">
-          <p className="animate-fade-up font-mono text-xs text-accent">// third line of defense&nbsp;· continuous auditing&nbsp;· ai agents</p>
+          <p className="animate-fade-up font-mono text-xs text-accent">// data&nbsp;· engineering&nbsp;· ai agents&nbsp;· shipped to production</p>
           <h1 className="animate-fade-up mt-4 text-6xl font-medium leading-[0.92] tracking-[-0.02em] [animation-delay:80ms] sm:text-7xl lg:text-[4rem]">
             {first}
             <br className="lg:hidden" />
@@ -80,7 +80,7 @@ export default function Hero() {
               <span>{person.name.toUpperCase()}</span>
               <span className="flex items-center gap-1.5">
                 <span className="h-1.5 w-1.5 rounded-full bg-accent animate-pulse-dot" />
-                INTERNAL AUDIT
+                DATA &amp; AI
               </span>
             </figcaption>
           </div>

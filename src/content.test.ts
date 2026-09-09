@@ -42,8 +42,9 @@ describe('content invariants', () => {
     expect(blob).not.toMatch(/intellio|youtube|phaser|unity|game/)
   })
 
-  it('capabilities have 4 groups with items', () => {
-    expect(capabilities).toHaveLength(4)
+  it('capabilities have 5 groups with items, AI & Agent Engineering second', () => {
+    expect(capabilities).toHaveLength(5)
+    expect(capabilities[1].name).toBe('AI & Agent Engineering')
     for (const g of capabilities) expect(g.items.length).toBeGreaterThan(0)
   })
 

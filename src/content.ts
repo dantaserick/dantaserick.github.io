@@ -27,7 +27,7 @@ export type Alert = { level: 'ok' | 'info' | 'warn'; label: string; text: string
 
 export const person = {
   name: 'Erick Dantas',
-  headline: 'Data Audit Specialist · Internal Audit · AI Agents · University Professor',
+  headline: 'Data & AI Engineer · Analytics · Agentic Systems · Software',
   location: 'Santos, São Paulo, Brazil',
   email: 'dantaserick@hotmail.com',
   siteUrl: 'https://dantaserick.github.io/',
@@ -45,30 +45,30 @@ export const portrait = {
 
 /** Credentials strip under the hero. */
 export const credentials: { value: string; label: string }[] = [
-  { value: '10+', label: 'years across engineering, research and audit' },
-  { value: '3rd', label: 'line of defense, Internal Audit' },
-  { value: '2022', label: 'in Internal Audit data team since' },
+  { value: '10+', label: 'years across engineering, research and data' },
+  { value: '4+', label: 'AI agents on real fieldwork, human-gated' },
+  { value: '3', label: 'languages in production: SQL, Scala, Python' },
   { value: 'MSc', label: 'Universidade Federal de São Paulo' },
   { value: '2019', label: 'University Professor since' },
 ]
 
 export const heroIntro =
-  'I turn audit objectives into analytical tests over large-scale financial data, and build governed AI agents so audits scale without losing rigor.'
+  'I build data pipelines, analytical tests and governed AI agents that run on real financial data at scale. Today I do that inside a bank\'s Internal Audit; before that, environmental engineering and research.'
 
 export const about: string[] = [
-  'Environmental Engineer turned Data Scientist, with 10+ years across environmental sciences, academic research and corporate data auditing.',
-  'Today I am a Data Audit Specialist in the third line of defense at a large digital bank: I lead Continuous Auditing over large-scale financial data and build the agents, and the governance around them, that make an AI-first audit practice auditable.',
-  'Outside work I build software with AI coding agents: multi-agent pipelines with human approval gates, append-only ledgers for traceability, and test suites in the hundreds. The same discipline I apply to audit evidence, applied to what the agents produce.',
+  'Engineer and data scientist who builds systems: pipelines over a data lake, analytical tests in SQL, Scala and Python, and AI agents that do real work under human approval.',
+  'Today that happens inside the Internal Audit of a large digital bank, where I lead the continuous-monitoring platform and shipped the specialist agents, plus the governance layer that audits the agents themselves.',
+  'Outside work I build software with AI coding agents: multi-agent pipelines with human approval gates, append-only ledgers for traceability, and test suites in the hundreds. Desktop apps, CLIs, Android, web.',
   'In parallel, I teach in distance-learning programs in Environmental Management and Biological Sciences.',
 ]
 
 /** Fictional, generic alerts for the hero console. No real product, metric or data. */
 export const heroAlerts: Alert[] = [
-  { level: 'ok', label: 'DATA INTEGRITY', text: 'Coverage, completeness and accuracy tests passed for the monitored domain.' },
-  { level: 'warn', label: 'AUTOMATED CONTROL', text: 'Exception pattern detected. Triage opened and routed to the business auditor.' },
-  { level: 'info', label: 'AGENTIC AUDIT', text: 'Specialist agent drafted the workpaper. Meta-agent review passed. Awaiting human approval.' },
-  { level: 'ok', label: 'CONTINUOUS AUDIT', text: 'Rule set refreshed. Audit universe re-scored. Next cycle scheduled.' },
-  { level: 'info', label: 'TEACHING', text: 'New cohort onboarded. Integrated project briefs published.' },
+  { level: 'ok', label: 'PIPELINE', text: 'Incremental load finished. Schema and row counts reconciled against the source.' },
+  { level: 'ok', label: 'ANALYTICAL TEST', text: 'Coverage, completeness and accuracy checks passed for the monitored domain.' },
+  { level: 'warn', label: 'AGENT', text: 'Exception pattern found. Draft analysis and evidence bundle prepared for review.' },
+  { level: 'info', label: 'META-REVIEW', text: 'Agent output audited by the meta-agent. Traceability and quality gates passed.' },
+  { level: 'ok', label: 'HUMAN GATE', text: 'Reviewer approved. Deliverable published. Next cycle scheduled.' },
 ]
 
 export const experience: Employer[] = [
@@ -80,14 +80,14 @@ export const experience: Employer[] = [
         start: '2026-09',
         end: 'Present',
         summary:
-          'Third line of defense, in the Internal Audit data team since 2022. Data and AI to assess and strengthen internal controls, risk management and governance across the bank’s products.',
+          'Data and AI engineering inside Internal Audit, in the data team since 2022. Large-scale datasets in the data lake, analytical tests over the bank’s products, and AI agents that do real fieldwork under human approval.',
         bullets: [
-          'Turn audit objectives into analytical tests over the data lake: data coverage, integrity and accuracy, and the effectiveness of automated controls.',
-          'Lead Continuous Auditing: automated-test roadmap, audit universes and rules in SQL, Scala and Python. Rationalized the test portfolio into a curated, high-materiality baseline and authored the multi-year proposal setting its direction: continuous auditing as a service, unified control monitoring, audit-by-design and continuous assurance.',
-          'Drive the move from a centralized ETL model to a decentralized, AI-driven monitoring ecosystem, with agent-based review of the tests themselves.',
-          'Designed and shipped specialist agents used on real fieldwork under human approval gates: data analysis across business domains, process and control mapping, control-test execution with traceable workpapers and audit reporting.',
+          'Build analytical tests in SQL, Scala and Python over the data lake: data coverage, integrity and accuracy, and the effectiveness of automated controls.',
+          'Lead the continuous-monitoring platform: automated-test roadmap, test universes and rules. Rationalized the portfolio into a curated, high-materiality baseline and authored the multi-year proposal setting its direction.',
+          'Drive the migration from a centralized ETL model to a decentralized, AI-driven monitoring ecosystem, with agent-based review of the tests themselves.',
+          'Designed and shipped specialist agents used on real fieldwork under human approval gates: data analysis across business domains, process and control mapping, test execution with traceable workpapers and reporting.',
           'Built the governance layer on top of them, including a meta-agent that audits AI agents and blocks sub-standard ones from production.',
-          'Work cross-functionally with risk, product, engineering, data and compliance; build product inside the audit platform (AI-assisted evidence validation, SLA monitoring) and run the programming enablement program, mentoring teammates.',
+          'Build product inside the audit platform (AI-assisted evidence validation, SLA monitoring), work cross-functionally with risk, product, engineering, data and compliance, and run the programming enablement program, mentoring teammates.',
         ],
       },
       { title: 'Data Audit Analyst', start: '2024-09', end: '2026-09' },
@@ -170,39 +170,32 @@ export const projects: Project[] = [
 
 export const capabilities: CapabilityGroup[] = [
   {
-    name: 'Data & Audit Engineering',
-    items: ['SQL', 'Scala', 'Python', 'Databricks', 'Spark', 'Data lake analytics', 'Data quality testing'],
-  },
-  {
-    name: 'Continuous Audit & Controls',
-    items: [
-      'Continuous auditing as a service',
-      'Audit universes',
-      'Automated audit tests',
-      'Unified control monitoring',
-      'Audit-by-design',
-      'Continuous assurance',
-      'Control effectiveness',
-      'Third line of defense',
-    ],
+    name: 'Data Engineering & Analytics',
+    items: ['SQL', 'Scala', 'Python', 'Spark', 'Databricks', 'Data lake pipelines', 'Analytical tests', 'Data quality & reconciliation'],
   },
   {
     name: 'AI & Agent Engineering',
     items: [
-      'Agentic auditing',
-      'Specialist audit agents (fieldwork, workpapers, reporting)',
-      'Agent governance & meta-audit',
+      'Specialist agents in production',
+      'Agent governance & meta-review',
       'Multi-agent orchestration',
       'Human-in-the-loop gates',
       'Claude Code plugins & skills',
       'Browser automation (CDP)',
       'Agent-driven TDD',
-      'Responsible AI use',
     ],
   },
   {
+    name: 'Software Engineering',
+    items: ['TypeScript', 'React', 'Node.js', 'Kotlin & Compose', 'Electron', 'CLIs', 'SQLite', 'Vitest / test suites in the hundreds'],
+  },
+  {
+    name: 'Domain: Audit & Controls',
+    items: ['Continuous monitoring as a service', 'Control effectiveness', 'Audit-by-design', 'Continuous assurance', 'Third line of defense'],
+  },
+  {
     name: 'Teaching & Research',
-    items: ['Higher education (distance learning)', 'Environmental sciences', 'Academic research', 'Integrated project supervision', 'Programming enablement & mentoring'],
+    items: ['Higher education (distance learning)', 'Environmental sciences', 'Academic research', 'Programming enablement & mentoring'],
   },
 ]
 
