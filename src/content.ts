@@ -27,7 +27,7 @@ export type Alert = { level: 'ok' | 'info' | 'warn'; label: string; text: string
 
 export const person = {
   name: 'Erick Dantas',
-  headline: 'Data & AI Engineer · Analytics · Agentic Systems · Software',
+  headline: 'Data & AI Engineering · Analytics · Agentic Systems · Software',
   location: 'Santos, São Paulo, Brazil',
   email: 'dantaserick@hotmail.com',
   siteUrl: 'https://dantaserick.github.io/',

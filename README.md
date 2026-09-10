@@ -1,6 +1,6 @@
 # dantaserick.github.io
 
-Personal site of Erick Dantas — Data & AI Engineer (analytics, agentic systems, software) and University Professor.
+Personal site of Erick Dantas — Data & AI Engineering (analytics, agentic systems, software) and University Professor.
 Live at **https://dantaserick.github.io**.
 
 ## Stack
