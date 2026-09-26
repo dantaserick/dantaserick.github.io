@@ -11,7 +11,7 @@ React 19 · Vite · TypeScript · Tailwind CSS 4 · Vitest · oxlint. Single pag
 
 Everything the site shows lives in one file: [`src/content.ts`](src/content.ts) — experience, projects, capabilities, education, links and the hero console alerts. Components carry no business text. Edit that file, commit, push to `main`, and GitHub Actions rebuilds and publishes the site.
 
-`npm test` runs a few invariants over the content (links are https, dates are `YYYY-MM`, hero alerts stay generic, first project is Bridge).
+`npm test` runs a few invariants over the content (links are https, dates are `YYYY-MM`, hero alerts stay generic, first project is Bridge, live).
 
 ## Local development
 

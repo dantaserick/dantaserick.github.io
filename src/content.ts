@@ -130,9 +130,10 @@ export const projects: Project[] = [
     name: 'Bridge',
     tagline: 'Run several coding agents side by side on Windows.',
     description:
-      'A desktop app where each AI coding session lives in its own terminal pane. Bridge reads the session hooks and shows, in a sidebar, what every agent is doing right now, and fires a native notification when one needs you.',
-    status: 'under-construction',
-    tags: ['Electron', 'Node.js', 'TypeScript', 'React'],
+      'A desktop app where each Claude Code session lives in its own terminal pane. Bridge reads the session hooks and shows, in a sidebar, what every agent is doing right now (running, waiting for you, stuck, done), gives each task its own git worktree and tracks token usage and cost. First public release, v0.18.2, with a Windows installer.',
+    status: 'live',
+    href: 'https://github.com/dantaserick/bridge',
+    tags: ['Electron', 'Node.js', 'TypeScript', 'React', 'SQLite'],
   },
   {
     name: 'Firma',

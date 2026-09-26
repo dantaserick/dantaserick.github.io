@@ -31,10 +31,10 @@ describe('content invariants', () => {
     for (const e of experience) expect(e.roles[0].start <= firstStart).toBe(true)
   })
 
-  it('projects: first is Bridge, under construction, no href', () => {
+  it('projects: first is Bridge, live, linking to its repository', () => {
     expect(projects[0].name).toBe('Bridge')
-    expect(projects[0].status).toBe('under-construction')
-    expect(projects[0].href).toBeUndefined()
+    expect(projects[0].status).toBe('live')
+    expect(projects[0].href).toBe('https://github.com/dantaserick/bridge')
   })
 
   it('projects never mention excluded topics (Intellio, games, YouTube channels)', () => {
